@@ -2,14 +2,14 @@
 <img src="https://user-images.githubusercontent.com/69421356/175442177-0f05ce78-31a5-44db-a7e3-603f7e96050a.png">
 
 ```rust
-pub struct GithubProfile {
+pub struct Profile {
     description: String,
     languages: Vec<&'static str>,
     tools: Vec<&'static str>,
     servers: Vec<&'static str>,
 }
 
-impl GithubProfile {
+impl Profile {
     pub fn new() -> Self {
         Self {
             description: String::from("Low-level programming enthusiast"),
