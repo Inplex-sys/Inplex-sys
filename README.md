@@ -1,13 +1,22 @@
 <h1 align="center">🪐 Welcome To My Profile ☄️</h1>
 <img src="https://user-images.githubusercontent.com/69421356/175442177-0f05ce78-31a5-44db-a7e3-603f7e96050a.png">
 
-```javascript
-export default class Client {
-    constructor() {
-        this.Description = "A friendly developper who like ethickal hacking",
-        this.MostUsedLangs = ["Python", "Php", "Rust", "C", "Go", "Perl", "NodeJS"],
-        this.Tools = ["netdata", "iptables", "pfsense", "grafana"],
-        this.Servers = ["openresty", "mariadb", "mongodb", "redis", "caddy"]
+```rust
+pub struct GithubProfile {
+    description: String,
+    languages: Vec<&'static str>,
+    tools: Vec<&'static str>,
+    servers: Vec<&'static str>,
+}
+
+impl GithubProfile {
+    pub fn new() -> Self {
+        Self {
+            description: String::from("Low-level programming enthusiast"),
+            languages: vec!["Python", "PHP", "Rust", "C", "Go", "Perl", "Typescript"],
+            tools: vec!["Docker", "Kubernetes", "Git", "Github Actions", "Travis CI", "Jenkins"],
+            servers: vec!["Nginx", "Apache", "Caddy", "HAProxy"],
+        }
     }
 }
 ```
